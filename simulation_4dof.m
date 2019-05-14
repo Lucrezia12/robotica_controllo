@@ -59,7 +59,7 @@ while(time<tf)
     dt=T(i)-T(i-1);
     
     if time < 4
-    %% Online Trajectory planning nello spazio operativo...mi servirà inversione cinematica
+    %% Online Trajectory planning nello spazio operativo...mi servirÃ  inversione cinematica
     IN_XY(1:2)=XYi(1:2);
     IN_XY(3:4)=XYf(1:2);
     IN_XY(5)=0;
@@ -71,7 +71,7 @@ while(time<tf)
     end
     
      if  time > 4 && time < 8
-    %% Online Trajectory planning nello spazio operativo...mi servirà inversione cinematica
+    %% Online Trajectory planning nello spazio operativo...mi servirÃ  inversione cinematica
     IN_XY(1:2)=XYi_c1(1:2);
     IN_XY(3:4)=XYf_c1(1:2);
     IN_XY(5)=4;
@@ -83,9 +83,9 @@ while(time<tf)
     
      
       if time > 8 && time < 12
-    %% Online Trajectory planning nello spazio operativo...mi servirà inversione cinematica
-    IN_XY(1:2)=XYi(1:2);
-    IN_XY(3:4)=XYf(1:2);
+    %% Online Trajectory planning nello spazio operativo...mi servirÃ  inversione cinematica
+    IN_XY(1:2)=XYi_c2(1:2);
+    IN_XY(3:4)=XYf_c2(1:2);
     IN_XY(5)=8;
     IN_XY(6)=12;
     IN_XY(7)=time;
